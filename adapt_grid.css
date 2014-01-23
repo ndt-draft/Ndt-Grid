@@ -1,0 +1,1019 @@
+/**
+ * Ndt Grid
+ * Responsive grid system
+ *
+ * Base on 960.gs
+ * http://960.gs/
+ * Thanks to fine work of Nathan Smith
+ * 
+ * Modified by Thanh Nguyen Dac
+ * Version: 0.1
+ * Licensed under GPL and MIT
+ */
+/**
+ * Table of Content
+ * 1.0 Base 960 Grid
+ * 2.0 Tablet
+ * 3.0 Mobile
+ * 4.0 Clearing
+ */
+/* 
+ * 1.0 Base 960 Grid
+ * -----------------------------------------------------------------------------
+ */
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+body {
+  min-width: 900px;
+}
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+}
+.boxed {
+  width: 1000px;
+  margin: auto;
+  background-color: #666;
+}
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.push_1,
+.pull_1,
+.push_2,
+.pull_2,
+.push_3,
+.pull_3,
+.push_4,
+.pull_4,
+.push_5,
+.pull_5,
+.push_6,
+.pull_6,
+.push_7,
+.pull_7,
+.push_8,
+.pull_8,
+.push_9,
+.pull_9,
+.push_10,
+.pull_10,
+.push_11,
+.pull_11,
+.push_12,
+.pull_12 {
+  position: relative;
+}
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+.alpha {
+  margin-left: 0;
+}
+.omega {
+  margin-right: 0;
+}
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .grid_1 {
+  width: 55px;
+}
+.container_12 .grid_2 {
+  width: 130px;
+}
+.container_12 .grid_3 {
+  width: 205px;
+}
+.container_12 .grid_4 {
+  width: 280px;
+}
+.container_12 .grid_5 {
+  width: 355px;
+}
+.container_12 .grid_6 {
+  width: 430px;
+}
+.container_12 .grid_7 {
+  width: 505px;
+}
+.container_12 .grid_8 {
+  width: 580px;
+}
+.container_12 .grid_9 {
+  width: 655px;
+}
+.container_12 .grid_10 {
+  width: 730px;
+}
+.container_12 .grid_11 {
+  width: 805px;
+}
+.container_12 .grid_12 {
+  width: 880px;
+}
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .prefix_1 {
+  padding-left: 75px;
+}
+.container_12 .prefix_2 {
+  padding-left: 150px;
+}
+.container_12 .prefix_3 {
+  padding-left: 225px;
+}
+.container_12 .prefix_4 {
+  padding-left: 300px;
+}
+.container_12 .prefix_5 {
+  padding-left: 375px;
+}
+.container_12 .prefix_6 {
+  padding-left: 450px;
+}
+.container_12 .prefix_7 {
+  padding-left: 525px;
+}
+.container_12 .prefix_8 {
+  padding-left: 600px;
+}
+.container_12 .prefix_9 {
+  padding-left: 675px;
+}
+.container_12 .prefix_10 {
+  padding-left: 750px;
+}
+.container_12 .prefix_11 {
+  padding-left: 825px;
+}
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .suffix_1 {
+  padding-right: 75px;
+}
+.container_12 .suffix_2 {
+  padding-right: 150px;
+}
+.container_12 .suffix_3 {
+  padding-right: 225px;
+}
+.container_12 .suffix_4 {
+  padding-right: 300px;
+}
+.container_12 .suffix_5 {
+  padding-right: 375px;
+}
+.container_12 .suffix_6 {
+  padding-right: 450px;
+}
+.container_12 .suffix_7 {
+  padding-right: 525px;
+}
+.container_12 .suffix_8 {
+  padding-right: 600px;
+}
+.container_12 .suffix_9 {
+  padding-right: 675px;
+}
+.container_12 .suffix_10 {
+  padding-right: 750px;
+}
+.container_12 .suffix_11 {
+  padding-right: 825px;
+}
+/* Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .push_1 {
+  left: 75px;
+}
+.container_12 .push_2 {
+  left: 150px;
+}
+.container_12 .push_3 {
+  left: 225px;
+}
+.container_12 .push_4 {
+  left: 300px;
+}
+.container_12 .push_5 {
+  left: 375px;
+}
+.container_12 .push_6 {
+  left: 450px;
+}
+.container_12 .push_7 {
+  left: 525px;
+}
+.container_12 .push_8 {
+  left: 600px;
+}
+.container_12 .push_9 {
+  left: 675px;
+}
+.container_12 .push_10 {
+  left: 750px;
+}
+.container_12 .push_11 {
+  left: 825px;
+}
+/* Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .pull_1 {
+  left: -75px;
+}
+.container_12 .pull_2 {
+  left: -150px;
+}
+.container_12 .pull_3 {
+  left: -225px;
+}
+.container_12 .pull_4 {
+  left: -300px;
+}
+.container_12 .pull_5 {
+  left: -375px;
+}
+.container_12 .pull_6 {
+  left: -450px;
+}
+.container_12 .pull_7 {
+  left: -525px;
+}
+.container_12 .pull_8 {
+  left: -600px;
+}
+.container_12 .pull_9 {
+  left: -675px;
+}
+.container_12 .pull_10 {
+  left: -750px;
+}
+.container_12 .pull_11 {
+  left: -825px;
+}
+/* 
+ * 1.1 Desktop - Large
+ * -----------------------------------------------------------------------------
+ */
+@media screen and (min-width: 980px) {
+  .responsive {
+    /* `Containers
+		----------------------------------------------------------------------------------------------------*/
+    /* `Grid >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Prefix Extra Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Suffix Extra Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Push Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Pull Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+  }
+  .responsive body {
+    min-width: 960px;
+  }
+  .responsive .boxed {
+    width: 1060px;
+  }
+  .responsive .container_12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+  }
+  .responsive .container_12 .grid_1 {
+    width: 60px;
+  }
+  .responsive .container_12 .grid_2 {
+    width: 140px;
+  }
+  .responsive .container_12 .grid_3 {
+    width: 220px;
+  }
+  .responsive .container_12 .grid_4 {
+    width: 300px;
+  }
+  .responsive .container_12 .grid_5 {
+    width: 380px;
+  }
+  .responsive .container_12 .grid_6 {
+    width: 460px;
+  }
+  .responsive .container_12 .grid_7 {
+    width: 540px;
+  }
+  .responsive .container_12 .grid_8 {
+    width: 620px;
+  }
+  .responsive .container_12 .grid_9 {
+    width: 700px;
+  }
+  .responsive .container_12 .grid_10 {
+    width: 780px;
+  }
+  .responsive .container_12 .grid_11 {
+    width: 860px;
+  }
+  .responsive .container_12 .grid_12 {
+    width: 940px;
+  }
+  .responsive .container_12 .prefix_1 {
+    padding-left: 80px;
+  }
+  .responsive .container_12 .prefix_2 {
+    padding-left: 160px;
+  }
+  .responsive .container_12 .prefix_3 {
+    padding-left: 240px;
+  }
+  .responsive .container_12 .prefix_4 {
+    padding-left: 320px;
+  }
+  .responsive .container_12 .prefix_5 {
+    padding-left: 400px;
+  }
+  .responsive .container_12 .prefix_6 {
+    padding-left: 480px;
+  }
+  .responsive .container_12 .prefix_7 {
+    padding-left: 560px;
+  }
+  .responsive .container_12 .prefix_8 {
+    padding-left: 640px;
+  }
+  .responsive .container_12 .prefix_9 {
+    padding-left: 720px;
+  }
+  .responsive .container_12 .prefix_10 {
+    padding-left: 800px;
+  }
+  .responsive .container_12 .prefix_11 {
+    padding-left: 880px;
+  }
+  .responsive .container_12 .suffix_1 {
+    padding-right: 80px;
+  }
+  .responsive .container_12 .suffix_2 {
+    padding-right: 160px;
+  }
+  .responsive .container_12 .suffix_3 {
+    padding-right: 240px;
+  }
+  .responsive .container_12 .suffix_4 {
+    padding-right: 320px;
+  }
+  .responsive .container_12 .suffix_5 {
+    padding-right: 400px;
+  }
+  .responsive .container_12 .suffix_6 {
+    padding-right: 480px;
+  }
+  .responsive .container_12 .suffix_7 {
+    padding-right: 560px;
+  }
+  .responsive .container_12 .suffix_8 {
+    padding-right: 640px;
+  }
+  .responsive .container_12 .suffix_9 {
+    padding-right: 720px;
+  }
+  .responsive .container_12 .suffix_10 {
+    padding-right: 800px;
+  }
+  .responsive .container_12 .suffix_11 {
+    padding-right: 880px;
+  }
+  .responsive .container_12 .push_1 {
+    left: 80px;
+  }
+  .responsive .container_12 .push_2 {
+    left: 160px;
+  }
+  .responsive .container_12 .push_3 {
+    left: 240px;
+  }
+  .responsive .container_12 .push_4 {
+    left: 320px;
+  }
+  .responsive .container_12 .push_5 {
+    left: 400px;
+  }
+  .responsive .container_12 .push_6 {
+    left: 480px;
+  }
+  .responsive .container_12 .push_7 {
+    left: 560px;
+  }
+  .responsive .container_12 .push_8 {
+    left: 640px;
+  }
+  .responsive .container_12 .push_9 {
+    left: 720px;
+  }
+  .responsive .container_12 .push_10 {
+    left: 800px;
+  }
+  .responsive .container_12 .push_11 {
+    left: 880px;
+  }
+  .responsive .container_12 .pull_1 {
+    left: -80px;
+  }
+  .responsive .container_12 .pull_2 {
+    left: -160px;
+  }
+  .responsive .container_12 .pull_3 {
+    left: -240px;
+  }
+  .responsive .container_12 .pull_4 {
+    left: -320px;
+  }
+  .responsive .container_12 .pull_5 {
+    left: -400px;
+  }
+  .responsive .container_12 .pull_6 {
+    left: -480px;
+  }
+  .responsive .container_12 .pull_7 {
+    left: -560px;
+  }
+  .responsive .container_12 .pull_8 {
+    left: -640px;
+  }
+  .responsive .container_12 .pull_9 {
+    left: -720px;
+  }
+  .responsive .container_12 .pull_10 {
+    left: -800px;
+  }
+  .responsive .container_12 .pull_11 {
+    left: -880px;
+  }
+}
+/* 
+ * 1.2 Desktop - Extra large
+ * -----------------------------------------------------------------------------
+ */
+@media screen and (min-width: 1280px) {
+  .responsive_large {
+    /* `Containers
+		----------------------------------------------------------------------------------------------------*/
+    /* `Grid >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Prefix Extra Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Suffix Extra Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Push Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Pull Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+  }
+  .responsive_large body {
+    min-width: 1200px;
+  }
+  .responsive_large .boxed {
+    width: 1300px;
+  }
+  .responsive_large .container_12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
+  .responsive_large .container_12 .grid_1 {
+    width: 80px;
+  }
+  .responsive_large .container_12 .grid_2 {
+    width: 180px;
+  }
+  .responsive_large .container_12 .grid_3 {
+    width: 280px;
+  }
+  .responsive_large .container_12 .grid_4 {
+    width: 380px;
+  }
+  .responsive_large .container_12 .grid_5 {
+    width: 480px;
+  }
+  .responsive_large .container_12 .grid_6 {
+    width: 580px;
+  }
+  .responsive_large .container_12 .grid_7 {
+    width: 680px;
+  }
+  .responsive_large .container_12 .grid_8 {
+    width: 780px;
+  }
+  .responsive_large .container_12 .grid_9 {
+    width: 880px;
+  }
+  .responsive_large .container_12 .grid_10 {
+    width: 980px;
+  }
+  .responsive_large .container_12 .grid_11 {
+    width: 1080px;
+  }
+  .responsive_large .container_12 .grid_12 {
+    width: 1180px;
+  }
+  .responsive_large .container_12 .prefix_1 {
+    padding-left: 100px;
+  }
+  .responsive_large .container_12 .prefix_2 {
+    padding-left: 200px;
+  }
+  .responsive_large .container_12 .prefix_3 {
+    padding-left: 300px;
+  }
+  .responsive_large .container_12 .prefix_4 {
+    padding-left: 400px;
+  }
+  .responsive_large .container_12 .prefix_5 {
+    padding-left: 500px;
+  }
+  .responsive_large .container_12 .prefix_6 {
+    padding-left: 600px;
+  }
+  .responsive_large .container_12 .prefix_7 {
+    padding-left: 700px;
+  }
+  .responsive_large .container_12 .prefix_8 {
+    padding-left: 800px;
+  }
+  .responsive_large .container_12 .prefix_9 {
+    padding-left: 900px;
+  }
+  .responsive_large .container_12 .prefix_10 {
+    padding-left: 1000px;
+  }
+  .responsive_large .container_12 .prefix_11 {
+    padding-left: 1100px;
+  }
+  .responsive_large .container_12 .suffix_1 {
+    padding-right: 100px;
+  }
+  .responsive_large .container_12 .suffix_2 {
+    padding-right: 200px;
+  }
+  .responsive_large .container_12 .suffix_3 {
+    padding-right: 300px;
+  }
+  .responsive_large .container_12 .suffix_4 {
+    padding-right: 400px;
+  }
+  .responsive_large .container_12 .suffix_5 {
+    padding-right: 500px;
+  }
+  .responsive_large .container_12 .suffix_6 {
+    padding-right: 600px;
+  }
+  .responsive_large .container_12 .suffix_7 {
+    padding-right: 700px;
+  }
+  .responsive_large .container_12 .suffix_8 {
+    padding-right: 800px;
+  }
+  .responsive_large .container_12 .suffix_9 {
+    padding-right: 900px;
+  }
+  .responsive_large .container_12 .suffix_10 {
+    padding-right: 1000px;
+  }
+  .responsive_large .container_12 .suffix_11 {
+    padding-right: 1100px;
+  }
+  .responsive_large .container_12 .push_1 {
+    left: 100px;
+  }
+  .responsive_large .container_12 .push_2 {
+    left: 200px;
+  }
+  .responsive_large .container_12 .push_3 {
+    left: 300px;
+  }
+  .responsive_large .container_12 .push_4 {
+    left: 400px;
+  }
+  .responsive_large .container_12 .push_5 {
+    left: 500px;
+  }
+  .responsive_large .container_12 .push_6 {
+    left: 600px;
+  }
+  .responsive_large .container_12 .push_7 {
+    left: 700px;
+  }
+  .responsive_large .container_12 .push_8 {
+    left: 800px;
+  }
+  .responsive_large .container_12 .push_9 {
+    left: 900px;
+  }
+  .responsive_large .container_12 .push_10 {
+    left: 1000px;
+  }
+  .responsive_large .container_12 .push_11 {
+    left: 1100px;
+  }
+  .responsive_large .container_12 .pull_1 {
+    left: -100px;
+  }
+  .responsive_large .container_12 .pull_2 {
+    left: -200px;
+  }
+  .responsive_large .container_12 .pull_3 {
+    left: -300px;
+  }
+  .responsive_large .container_12 .pull_4 {
+    left: -400px;
+  }
+  .responsive_large .container_12 .pull_5 {
+    left: -500px;
+  }
+  .responsive_large .container_12 .pull_6 {
+    left: -600px;
+  }
+  .responsive_large .container_12 .pull_7 {
+    left: -700px;
+  }
+  .responsive_large .container_12 .pull_8 {
+    left: -800px;
+  }
+  .responsive_large .container_12 .pull_9 {
+    left: -900px;
+  }
+  .responsive_large .container_12 .pull_10 {
+    left: -1000px;
+  }
+  .responsive_large .container_12 .pull_11 {
+    left: -1100px;
+  }
+}
+/* 
+ * 2.0 Tablet
+ * -----------------------------------------------------------------------------
+ */
+@media screen and (min-width: 760px) and (max-width: 980px) {
+  .responsive {
+    /* `Containers
+		----------------------------------------------------------------------------------------------------*/
+    /* `Grid >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Prefix Extra Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Suffix Extra Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Push Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Pull Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+  }
+  .responsive body {
+    min-width: 720px;
+  }
+  .responsive .boxed {
+    width: 820px;
+  }
+  .responsive .container_12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+  }
+  .responsive .container_12 .grid_1 {
+    width: 40px;
+  }
+  .responsive .container_12 .grid_2 {
+    width: 100px;
+  }
+  .responsive .container_12 .grid_3 {
+    width: 160px;
+  }
+  .responsive .container_12 .grid_4 {
+    width: 220px;
+  }
+  .responsive .container_12 .grid_5 {
+    width: 280px;
+  }
+  .responsive .container_12 .grid_6 {
+    width: 340px;
+  }
+  .responsive .container_12 .grid_7 {
+    width: 400px;
+  }
+  .responsive .container_12 .grid_8 {
+    width: 460px;
+  }
+  .responsive .container_12 .grid_9 {
+    width: 520px;
+  }
+  .responsive .container_12 .grid_10 {
+    width: 580px;
+  }
+  .responsive .container_12 .grid_11 {
+    width: 640px;
+  }
+  .responsive .container_12 .grid_12 {
+    width: 700px;
+  }
+  .responsive .container_12 .prefix_1 {
+    padding-left: 60px;
+  }
+  .responsive .container_12 .prefix_2 {
+    padding-left: 120px;
+  }
+  .responsive .container_12 .prefix_3 {
+    padding-left: 180px;
+  }
+  .responsive .container_12 .prefix_4 {
+    padding-left: 240px;
+  }
+  .responsive .container_12 .prefix_5 {
+    padding-left: 300px;
+  }
+  .responsive .container_12 .prefix_6 {
+    padding-left: 360px;
+  }
+  .responsive .container_12 .prefix_7 {
+    padding-left: 420px;
+  }
+  .responsive .container_12 .prefix_8 {
+    padding-left: 480px;
+  }
+  .responsive .container_12 .prefix_9 {
+    padding-left: 540px;
+  }
+  .responsive .container_12 .prefix_10 {
+    padding-left: 600px;
+  }
+  .responsive .container_12 .prefix_11 {
+    padding-left: 660px;
+  }
+  .responsive .container_12 .suffix_1 {
+    padding-right: 60px;
+  }
+  .responsive .container_12 .suffix_2 {
+    padding-right: 120px;
+  }
+  .responsive .container_12 .suffix_3 {
+    padding-right: 180px;
+  }
+  .responsive .container_12 .suffix_4 {
+    padding-right: 240px;
+  }
+  .responsive .container_12 .suffix_5 {
+    padding-right: 300px;
+  }
+  .responsive .container_12 .suffix_6 {
+    padding-right: 360px;
+  }
+  .responsive .container_12 .suffix_7 {
+    padding-right: 420px;
+  }
+  .responsive .container_12 .suffix_8 {
+    padding-right: 480px;
+  }
+  .responsive .container_12 .suffix_9 {
+    padding-right: 540px;
+  }
+  .responsive .container_12 .suffix_10 {
+    padding-right: 600px;
+  }
+  .responsive .container_12 .suffix_11 {
+    padding-right: 660px;
+  }
+  .responsive .container_12 .push_1 {
+    left: 60px;
+  }
+  .responsive .container_12 .push_2 {
+    left: 120px;
+  }
+  .responsive .container_12 .push_3 {
+    left: 180px;
+  }
+  .responsive .container_12 .push_4 {
+    left: 240px;
+  }
+  .responsive .container_12 .push_5 {
+    left: 300px;
+  }
+  .responsive .container_12 .push_6 {
+    left: 360px;
+  }
+  .responsive .container_12 .push_7 {
+    left: 420px;
+  }
+  .responsive .container_12 .push_8 {
+    left: 480px;
+  }
+  .responsive .container_12 .push_9 {
+    left: 540px;
+  }
+  .responsive .container_12 .push_10 {
+    left: 600px;
+  }
+  .responsive .container_12 .push_11 {
+    left: 660px;
+  }
+  .responsive .container_12 .pull_1 {
+    left: -60px;
+  }
+  .responsive .container_12 .pull_2 {
+    left: -120px;
+  }
+  .responsive .container_12 .pull_3 {
+    left: -180px;
+  }
+  .responsive .container_12 .pull_4 {
+    left: -240px;
+  }
+  .responsive .container_12 .pull_5 {
+    left: -300px;
+  }
+  .responsive .container_12 .pull_6 {
+    left: -360px;
+  }
+  .responsive .container_12 .pull_7 {
+    left: -420px;
+  }
+  .responsive .container_12 .pull_8 {
+    left: -480px;
+  }
+  .responsive .container_12 .pull_9 {
+    left: -540px;
+  }
+  .responsive .container_12 .pull_10 {
+    left: -600px;
+  }
+  .responsive .container_12 .pull_11 {
+    left: -660px;
+  }
+}
+/* 
+ * 2.0 Mobile
+ * -----------------------------------------------------------------------------
+ */
+@media screen and (max-width: 760px) {
+  .responsive {
+    /* `Containers
+		----------------------------------------------------------------------------------------------------*/
+    /* `Grid >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Prefix Extra Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Suffix Extra Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+    /* `Push Space >> 12 Columns
+		----------------------------------------------------------------------------------------------------*/
+  }
+  .responsive body {
+    min-width: 268px;
+  }
+  .responsive .boxed {
+    width: 318px;
+  }
+  .responsive .container_12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 268px;
+  }
+  .responsive .container_12 .grid_1,
+  .responsive .container_12 .grid_2,
+  .responsive .container_12 .grid_3,
+  .responsive .container_12 .grid_4,
+  .responsive .container_12 .grid_5,
+  .responsive .container_12 .grid_6,
+  .responsive .container_12 .grid_7,
+  .responsive .container_12 .grid_8,
+  .responsive .container_12 .grid_9,
+  .responsive .container_12 .grid_10,
+  .responsive .container_12 .grid_11,
+  .responsive .container_12 .grid_12 {
+    width: 100%;
+  }
+  .responsive .container_12 .prefix_1,
+  .responsive .container_12 .prefix_2,
+  .responsive .container_12 .prefix_3,
+  .responsive .container_12 .prefix_4,
+  .responsive .container_12 .prefix_5,
+  .responsive .container_12 .prefix_6,
+  .responsive .container_12 .prefix_7,
+  .responsive .container_12 .prefix_8,
+  .responsive .container_12 .prefix_9,
+  .responsive .container_12 .prefix_10,
+  .responsive .container_12 .prefix_11 {
+    padding-left: 0;
+  }
+  .responsive .container_12 .suffix_1,
+  .responsive .container_12 .suffix_2,
+  .responsive .container_12 .suffix_3,
+  .responsive .container_12 .suffix_4,
+  .responsive .container_12 .suffix_5,
+  .responsive .container_12 .suffix_6,
+  .responsive .container_12 .suffix_7,
+  .responsive .container_12 .suffix_8,
+  .responsive .container_12 .suffix_9,
+  .responsive .container_12 .suffix_10,
+  .responsive .container_12 .suffix_11 {
+    padding-right: 0;
+  }
+  .responsive .container_12 .push_1,
+  .responsive .container_12 .push_2,
+  .responsive .container_12 .push_3,
+  .responsive .container_12 .push_4,
+  .responsive .container_12 .push_5,
+  .responsive .container_12 .push_6,
+  .responsive .container_12 .push_7,
+  .responsive .container_12 .push_8,
+  .responsive .container_12 .push_9,
+  .responsive .container_12 .push_10,
+  .responsive .container_12 .push_11,
+  .responsive .container_12 .pull_1,
+  .responsive .container_12 .pull_2,
+  .responsive .container_12 .pull_3,
+  .responsive .container_12 .pull_4,
+  .responsive .container_12 .pull_5,
+  .responsive .container_12 .pull_6,
+  .responsive .container_12 .pull_7,
+  .responsive .container_12 .pull_8,
+  .responsive .container_12 .pull_9,
+  .responsive .container_12 .pull_10,
+  .responsive .container_12 .pull_11 {
+    left: 0;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 760px) {
+  .responsive {
+    /* `Containers
+		----------------------------------------------------------------------------------------------------*/
+  }
+  .responsive body {
+    min-width: 428px;
+  }
+  .responsive .boxed {
+    width: 478px;
+  }
+  .responsive .container_12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 428px;
+  }
+}
+/* 
+ * 4.0 Clearing
+ * -----------------------------------------------------------------------------
+ */
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+.clearfix {
+  zoom: 1;
+}
