@@ -15,5 +15,7 @@ Licensed under GPL and MIT
 
 Usage
 ========
+
 .boxed for body tag
+
 .responsive, .responsive_large for html tag
