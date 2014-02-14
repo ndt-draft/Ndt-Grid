@@ -7,10 +7,6 @@ http://960.gs/
 
 Thanks to fine work of Nathan Smith
 
-Also thanks to the less version of David Turner
-
-https://github.com/davidturner/960-LESS
-
 Modified by Thanh Nguyen Dac
 
 Version: 0.1
