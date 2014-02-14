@@ -12,3 +12,8 @@ Modified by Thanh Nguyen Dac
 Version: 0.1
 
 Licensed under GPL and MIT
+
+Usage
+========
+.boxed for body tag
+.responsive, .responsive_large for html tag
